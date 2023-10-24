@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Inicio de Sesión</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <!-- Contenedor del logo -->
+
+  <br>
+
+  <ion-row class="ion-align-items-center ion-justify-content-center">
+    <ion-col size="auto">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Logo_DuocUC.svg/2560px-Logo_DuocUC.svg.png" alt="Logo"width="full" height="50">
+    </ion-col>
+  </ion-row>
+
+  <!-- Formulario de inicio de sesión -->
+  <ion-row class="ion-align-items-center ion-justify-content-center ion-text-center">
+    <ion-col size="10">
+      <ion-item>
+        <ion-label position="floating">Nombre de usuario</ion-label>
+        <ion-input [(ngModel)]="username" type="text"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Contraseña</ion-label>
+        <ion-input [(ngModel)]="password" type="password"></ion-input>
+      </ion-item>
+
+      <br>
+      <br>
+      
+      <ion-button expand="full" (click)="login()">Iniciar Sesión</ion-button>
+      <ion-button expand="full" (click)="iraRegistro()">Registro</ion-button>
+    </ion-col>
+  </ion-row>
+
+  <br>
+
+  <!-- Enlace para restablecer la contraseña -->
+  <ion-row class="ion-align-items-center ion-justify-content-center ion-text-center">
+    <ion-col size="10">
+      <a (click)="iraCambiarPassword()">¿Olvidaste tu Contraseña?</a>
+    </ion-col>
+  </ion-row>
+
+</ion-content>

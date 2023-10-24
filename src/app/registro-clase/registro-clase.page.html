@@ -1,0 +1,65 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Clase Registrada</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <br>
+
+  <ion-row class="ion-align-items-center ion-justify-content-center">
+    <ion-col size="auto">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Logo_DuocUC.svg/2560px-Logo_DuocUC.svg.png" alt="Logo"width="full" height="50">
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="ion-align-items-center ion-justify-content-center ion-text-center">
+    <ion-col size="6">
+      <ion-card-header>
+        Foto del Alumno
+      </ion-card-header>
+      <ion-card-content>
+        <ion-img [src]="lastPhoto"></ion-img>
+      </ion-card-content>
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="ion-align-items-center ion-justify-content-center ion-text-left">
+    <ion-col size="10">
+      <ion-card-header>
+        Información de la Clase:
+      </ion-card-header>
+      <ion-card-content>
+        {{ scannedData }}
+      </ion-card-content>
+    </ion-col>
+
+    <ion-col size="10">
+      <ion-card-header>
+        Información del Alumno:
+      </ion-card-header>
+      <ion-card-content>
+        Nombre: <p>{{ nombre }} {{ apellido }}</p>
+
+        Rut: <p>{{ rut }}</p>
+
+        Carrera: <p>{{ carrera }}</p>
+      </ion-card-content>
+    </ion-col>
+
+  </ion-row>
+  
+</ion-content>
+
+<ion-footer>
+  
+  <ion-card-header>
+    Geolocalización
+  </ion-card-header>
+  <ion-card-content>
+    <p>Latitud: {{ latitude }}</p>
+    <p>Longitud: {{ longitude }}</p>
+  </ion-card-content>
+
+</ion-footer>

@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Home
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <br>
+
+  <ion-row class="ion-align-items-center ion-justify-content-center">
+    <ion-col size="auto">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Logo_DuocUC.svg/2560px-Logo_DuocUC.svg.png" alt="Logo"width="full" height="50">
+    </ion-col>
+  </ion-row>
+  
+  <br>
+  
+  <ion-row class="ion-align-items-center ion-justify-content-center">
+    <ion-col size="10">
+      <ion-card-header>
+        Bienvenido, {{ username }}!
+      </ion-card-header>
+
+      <br>
+      <br>
+
+      <ion-button expand="full" (click)="scanQr()">Escanear Código QR</ion-button>
+      <ion-button expand="full" (click)="takePhoto()">Tomar Foto</ion-button>
+
+    </ion-col>
+  </ion-row>
+    
+</ion-content>
