@@ -18,7 +18,7 @@ export class RegisterPage implements OnInit {
   carrera: string = '';
   regiones: any[] = [];
   comunas: any[] = [];
-  selectedRegion: any; // Declaración de la propiedad para almacenar la región seleccionada
+  selectedRegion: any;
   selectedComuna: any;
 
   constructor(
