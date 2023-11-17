@@ -53,7 +53,7 @@ export class HomePage implements OnInit{
     }
   }
 
-  async presentAlert() {
+ async presentAlert() {
     const alert = await this.alertController.create({
       header: '¡Atención!',
       message: 'Para registrar correctamente tu asistencia, debes escanear el Código QR y proporcionar una selfie tuya.',
